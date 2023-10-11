@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.name.Equals("포탈"))
         {
             Destroy(collision.gameObject);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         if (collision.gameObject.CompareTag("세이브포인트"))
         {
